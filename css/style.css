@@ -8,4 +8,85 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   margin: 0;
+  background-image: url("../img/bgtile.png"); /*need to go up one folder */
+  background-repeat: repeat-x; /*this ensure the tile only repeats from left to right */
+}
+
+.instagram-container {
+  position: relative;
+  top: 100px; /* pushes the entire container down */
+}
+
+.hero-image {
+  text-align: center; /* centers the phone image */
+}
+
+.hero-title {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  background-image: url("../img/bgtile.png"); /*need to go up one folder */
+  background-repeat: repeat-x;
+  box-shadow: 0 0 10px #000000;
+}
+
+.login img {
+  height: 30px;
+}
+
+.login p {
+  color: white;
+  font-weight: bold;
+  position: relative;
+  top: 6px;
+  padding-right: 8px;
+}
+
+.hero-text, .hero-text h2, {
+  padding: 16px;
+}
+
+.hero-text h2 {
+  color: #06365f;
+  padding-left: 16px;
+  padding-top: 16px;
+}
+
+.hero-text p, .hero-text img {
+  padding-left: 16px;
+}
+
+
+.hero-description {
+  background-image: url("../img/frame.png");
+  background-size: cover; /* otherwise it will not scale proportionately */
+  padding: 16px;
+}
+
+.footer {
+  display: flex; /* changes all to inline */
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 16px;
+}
+
+.footer p {
+  padding-left: 16px; /*gives spacing between words */
+  font-weight: bold;
+  color: #1c5380;
+}
+
+#copyright {
+  color: black;
+}
+
+@media only screen and (max-width: 540px) {
+  .hero-image {
+    display: none;
+  }
 }
